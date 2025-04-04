@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fafafa; /* Light background for a cleaner look */
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Added transition to color */
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+    color: #ff5722; /* Change text color on hover */
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.content {
+    flex: 1;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content box */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Transition for scale effect */
+}
+
+.content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.image-container {
+    flex: 0 0 300px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Same shadow effect for consistency */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Smooth zoom-in effect on hover */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on container hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #e64a19;
+    transform: translateY(-5px); /* Lift effect when hovering over buttons */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #444; /* Subtle hover effect for the footer */
+}
+
+.section {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #e0e0e0; /* Change section background color on hover */
+}
